@@ -1,0 +1,146 @@
+{% extends "header.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title> Itilite-shopz </title>
+    <!-- favicon -->
+    <!-- <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16"> -->
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAAB6CAMAAAC4CVBxAAAAZlBMVEX///8AAAAmJiYxMTHp6elRUVHu7u5VVVX5+fne3t5dXV0ODg729vbHx8e6urrz8/NDQ0NwcHCBgYHU1NR7e3tiYmLOzs6ysrIdHR2IiIicnJwsLCyQkJBKSko6OjppaWkWFhaoqKgVcHjaAAAEWUlEQVR4nO1b3ZqqMAwERBQEEf9AQZT3f8mz+3kaWClpG9KyFzvXpQxtmkzS4Hledk6GeB7v+9PWWwRnX4K6uC5AZy+j8o115pzLYYqL7xepYy7TVHz/FbvlssLI7NySuWNc/FXukkuKGMwXLi65eNFxtRvig8zeKRkvjH/gVD5fPZfKLZcxooEDdO9mPtG7wOfSVIbnK1yaiufVC1mvDLAwbo+1FKHgcnDq7+SA6HBamonnNb/IYK6Cy64OrCPBPzhEQzg7CpTMxikX3BRwOcGOB8YldsvFx7hEtfp5RhxQgymccmlQLp1TLrg4gTDgr+xBvKJS6HwQnNfQEqJMvKPFqXhHwaVTDKSjFK/Afd1A3a2tcYHzodKysVjA2pq4A5NUpoUrXdZURLDyyuT9Jobih5+OTrzgrByaiaG1JS5wOtQiKQzEWDtCM23F/BoGmejzpiA0WXcQmjcrXEqT6U9icGulfgfepdQYnML5jyxQSR/a3uUbTxPmpgC1ttMaDkJTFS8o2JtNDtQPFjbJyFw8k4BhDuG9dpqpKRgMv27o11zzkIIL2LBzgal1600noRsC9jAAwUj7jELIYNcNkPNoqyOoI96ZqeRgLtorDrpBpY5NAd5FrV0E+syEmQtB2W8t6YZ0bWwuA6HJqxtI6w0G82DVDQRz+dok+ADWkATn00gBJKSnVIDLIqM6KegGzruBuBL+3OgxMBjOsjNMalhX90nLicM8GL0BFU1G3VARv68Tz/HpBkikTfcdMhM9jawD8C6m56G/rGXTDZAEGm87CE023WCWGQ3BLjQhB6yNmyb6OBZGHMhJwej/Z0B85wbBS9zUs9JAyLomW3bmwpwK3iczA6RLXrwdhAySCmnU81JACraZel4C8DujKeSVemZjUMvp4LTrzZoJd6o0syI0iQDdwJ0+EhDx6wY6oLhmp+xshD4MLNTFOkBfdrZR6jUEbNJm+YXpN+kXdMQAl93ybUt94wdv9YOCsI9Jj6VawgFDpbm5Z4t2AeacbUtVM8/qeFVMPa/OxZsPzLyTYu3P2c20ONaVmXsnVb7U79BENfskhmz7xHGHGXWJ+kVqrJh+zEjj8lYUl2RDRtIwu+4tHbxE/vAHbWTNpm2TRjdZisrzoW2LzsLtfwnNS4GO+B38FHJhZpP/8Lxn5fG8BoPhL1bl3rfQvJEoxn+qHs78ahQA8Lgy7o/mu/opR3Pj6f641MfXfCXRDNguyXQp1y5JNS9yOGQKg+ta4SiZG7k/SWXDuf6cvMgmn64Zh7Lh/pWFyueBfmP6R4OTbDhTdUB+ZTLNRf7HA5O/e8rmnt6jSDacaY/kScm07W5laQOX7V4lc2NnWvazONvdcjCeG/N1MuNlC4+Sey10+8f/Men29mlgZL1HdHg8utZglDDbjy9VXY59WhirgNn+iAPqfv14WEMKuGv4exACBx0xkt+EwVdnC723p65IknOnK4vyrHkml2aPVBb+AagHOVoDJfn9AAAAAElFTkSuQmCC" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+        <!-- EXTERNAL LINKS -->
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<style>
+    #containerSlider
+    {
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        padding-top: 100px;
+        box-sizing: border-box;
+    }
+    #containerSlider img
+    {
+        width: 100%;
+        height: 140%;
+        text-align: center;
+        align-content: center;
+    }
+    @media(max-width: 732px)
+    {
+        #containerSlider img
+        {
+            height: 12em;
+        }
+    }
+    @media(max-width: 500px)
+    {
+        #containerSlider img
+        {
+            height: 10em;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- SLIDER -->
+    <!-- <div id="2"></div>
+    <script>
+        load("templetes/slider.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+            console.log("in slider element.")
+        }
+    </script> -->
+
+    <section>
+        <div id="containerSlider">
+            <div id="slidingImage"> <img src="{% static 'images/img1.png' %}" alt="image1"> </div>
+            <div id="slidingImage"> <img src="{% static 'images/img2.png' %}" alt="image2"> </div>
+            <div id="slidingImage"> <img src="{% static 'images/img3.png' %}" alt="image3"> </div>
+            <div id="slidingImage"> <img src="{% static 'images/img4.png' %}" alt="image4"> </div>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <!-- <div id="3"></div>
+    <script>
+        load("content.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script> -->
+
+    <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("templetes/footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+
+<!-- slider JS START -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+    $('#containerSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+    });
+</script>
+<!-- slider JS ENDS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+    $('#containerSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        });
+    });
+</script>
+<!-- content JS -->
+<script src="{% static 'js/content.js' %}"></script>
+
+</html>
